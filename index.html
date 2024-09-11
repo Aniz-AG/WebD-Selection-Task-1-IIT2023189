@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div id="box">
+    <!-- <div class="heading">Questions</div> -->
+    <div class="top">
+      <div style="width:90%">
+        <input type="text" id="searchinput" placeholder="Search By Category/Question">
+      </div>
+      <div class="toggle_view" style="display:flex;gap:10px;">
+        <i class='bx bx-move-vertical bx-sm' id="toggle_vertical" title="Vertical View"></i>
+        <i class='bx bx-grid-horizontal bx-sm' id="grid_view" title="Grid View"></i>
+      </div>
+    </div>
+    <div id="accordion-container">
+        <button class="accordion">
+          Accordion Title
+        </button>
+        <div class="current_accordion">
+          <strong>Question Title</strong><br>
+          Tags: N/A<br>
+          <a href="#" target="_blank">Watch on YouTube</a>
+          <a href="#" target="_blank">Problem 1</a>
+          <a href="#" target="_blank">Problem 2</a>
+        </div>
+    </div>
+  </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
